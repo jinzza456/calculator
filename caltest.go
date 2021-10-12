@@ -22,7 +22,7 @@ func main() {
 
 	n2, _ := strconv.Atoi(line)
 
-	fmt.Printf("입력하신 숫자는 %d, %d 입니다.", n1, n2)
+	fmt.Printf("입력하신 숫자는 %d, %d 입니다.\n", n1, n2)
 
 	fmt.Println("연산자를 입력하세요")
 
