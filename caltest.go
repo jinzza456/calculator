@@ -29,15 +29,28 @@ func main() {
 	line, _ = reader.ReadString('\n')
 	line = strings.TrimSpace(line)
 
-	if line == "+" {
+	// if line == "+" {
+	// 	fmt.Printf("%d + %d = %d", n1, n2, n1+n2)
+	// } else if line == "-" {
+	// 	fmt.Printf("%d - %d = %d", n1, n2, n1-n2)
+	// } else if line == "*" {
+	// 	fmt.Printf("%d * %d = %d", n1, n2, n1*n2)
+	// } else if line == "/" {
+	// 	fmt.Printf("%d / %d = %d", n1, n2, n1/n2)
+	// } else {
+	// 	fmt.Println("잘못 입력하셨습니다.")
+	// }
+
+	switch line {
+	case "+":
 		fmt.Printf("%d + %d = %d", n1, n2, n1+n2)
-	} else if line == "-" {
+	case "-":
 		fmt.Printf("%d - %d = %d", n1, n2, n1-n2)
-	} else if line == "*" {
+	case "*":
 		fmt.Printf("%d * %d = %d", n1, n2, n1*n2)
-	} else if line == "/" {
+	case "/":
 		fmt.Printf("%d / %d = %d", n1, n2, n1/n2)
-	} else {
+	default:
 		fmt.Println("잘못 입력하셨습니다.")
 	}
 }
